@@ -1,0 +1,121 @@
+[
+    {
+        "text": "Home",
+        "link": "/",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "Infotechno",
+                "link": "/index-infotechno"
+            },
+            {
+                "text": "Appointment",
+                "link": "/index-appointment"
+            },
+            {
+                "text": "Processing",
+                "link": "/index-processing"
+            },
+            {
+                "text": "Services",
+                "link": "/index-services"
+            },
+            {
+                "text": "Resolutions",
+                "link": "/index-resolutions"
+            }
+        ]
+    },
+    {
+        "text": "Company",
+        "link": "/about-us",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "About Us",
+                "link": "/about-us"
+            },
+            {
+                "text": "Contact Us",
+                "link": "/contact-us"
+            },
+            {
+                "text": "Leadership",
+                "link": "/leadership"
+            }
+        ]
+    },
+    {
+        "text": "Services",
+        "link": "/it-services",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "IT Services",
+                "link": "/it-services"
+            },
+            {
+                "text": "IT Solutions",
+                "link": "/it-solutions"
+            }
+        ]
+    },
+    {
+        "text": "Elements",
+        "link": "/",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "Accordion",
+                "link": "/elements/accordion"
+            },
+            {
+                "text": "Box Image",
+                "link": "/elements/box-image"
+            },
+            {
+                "text": "Box Large Image",
+                "link": "/elements/box-large-image"
+            },
+            {
+                "text": "Button",
+                "link": "/elements/button"
+            },
+            {
+                "text": "Call To Action",
+                "link": "/elements/call-to-action"
+            },
+            {
+                "text": "Client Logo",
+                "link": "/elements/client-logo"
+            },
+            {
+                "text": "Counters",
+                "link": "/elements/counters"
+            },
+            {
+                "text": "Lists",
+                "link": "/elements/lists"
+            },
+            {
+                "text": "Testimonials",
+                "link": "/elements/testimonials"
+            }
+        ]
+    },
+    {
+        "text": "Case Studies",
+        "link": "/case-studies"
+    },
+    {
+        "text": "Blog",
+        "link": "/blogs/list-large-image",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "Single Blog",
+                "link": "/5-ways-technology-has-improved-business-today"
+            }
+        ]
+    }
+]
