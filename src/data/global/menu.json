@@ -22,17 +22,7 @@
   {
     "text": "Our work",
     "link": "/it-services",
-    "isSubmenu": true,
-    "submenu": [
-      {
-        "text": "IT Services",
-        "link": "/it-services"
-      },
-      {
-        "text": "IT Solutions",
-        "link": "/it-solutions"
-      }
-    ]
+    "isSubmenu": false
   },
   {
     "text": "Blog",
