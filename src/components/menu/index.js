@@ -1,5 +1,4 @@
-import {MainMenu} from './main-menu'
-import {MobileMenu} from './mobile-menu'
+import { MainMenu } from "./main-menu";
+import { MobileMenu } from "./mobile-menu";
 
-
-export {MainMenu, MobileMenu}
+export { MainMenu, MobileMenu };

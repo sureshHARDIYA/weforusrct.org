@@ -1,14 +1,18 @@
-import styled from 'styled-components';
-import {NavbarWrap} from '../../ui/navbar/navbar.style'
-import {NavItemWrap} from '../../ui/navbar/navitem/navitem.style'
-import {NavLinkWrap, AnchorTag, SmoothScroll} from '../../ui/navbar/navlink/navlink.style'
-import {SubmenuWrap} from '../../ui/navbar/submenu/submenu.style'
-import {ExpandButtonWrap} from '../../ui/navbar/expand-button/expand-button.style'
+import styled from "styled-components";
+import { NavbarWrap } from "../../ui/navbar/navbar.style";
+import { NavItemWrap } from "../../ui/navbar/navitem/navitem.style";
+import {
+  NavLinkWrap,
+  AnchorTag,
+  SmoothScroll
+} from "../../ui/navbar/navlink/navlink.style";
+import { SubmenuWrap } from "../../ui/navbar/submenu/submenu.style";
+import { ExpandButtonWrap } from "../../ui/navbar/expand-button/expand-button.style";
 
-export const MobileMenuWrap = styled.nav `
+export const MobileMenuWrap = styled.nav`
     ${NavbarWrap}{
         flex-direction: column;
-    } 
+    }
     ${NavItemWrap}{
         margin-left: 0;
         margin-right: 0;

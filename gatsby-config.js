@@ -4,14 +4,14 @@ module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
     title: "We for us - rebuilding community together",
-    titleTemplate: `Mitech`,
+    titleTemplate: `We for us`,
     description: `Mitech is a Powerful & flexible Technology And Digital Software Gatsby Template. 06 Stunning Homepages are included in this template. You can use any template or mix content from different home pages for your website.`,
     author: `@HasThemes`,
     twitterUsername: `@HasThemes`,
     image: "landing.png",
-    siteUrl: "http://themesmummy.com/mitech/",
+    siteUrl: "https://weforusrct.org/",
     copyright:
-      "Mitech. <a href='https://hasthemes.com/' target='_blank' rel='noopener noreferrer'>All Rights Reserved.</a>",
+      "Mitech. <a href='https://weforusrct.org/' target='_blank' rel='noopener noreferrer'>All Rights Reserved.</a>",
     social: {
       facebook: "https://www.facebook.com",
       twitter: "https://www.twitter.com",
@@ -22,27 +22,27 @@ module.exports = {
       phone: "190068668",
       address: "58 Howard Street #2 San Francisco, CA 941",
       email: "hello@mitech.com",
-      website: "https://hasthemes.com/",
+      website: "https://weforusrct.org/",
       rating: "4.9",
       customers: "700",
       clients: "3200",
       addressInfos: [
         {
-          id: "san-francisco",
+          id: "USA",
           state: "San Francisco",
           address: "58 Howard Street #2 San Francisco, CA 941",
           email: "contact.sanfrancisco@mitech.com",
           phone: "(+68)1221 09876"
         },
         {
-          id: "new-york",
+          id: "NORWAY",
           state: "New York",
           address: "58 Howard Street #14 New York",
           email: "contact.newyork@mitech.com",
           phone: "(+68)1221 09878"
         },
         {
-          id: "russia",
+          id: "NEPAL",
           state: "Russia",
           address: "The Courtyard Building 11 Curtain Road, Russia",
           email: "contact.russia@mitech.com",

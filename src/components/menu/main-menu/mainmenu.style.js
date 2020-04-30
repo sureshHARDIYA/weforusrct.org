@@ -1,25 +1,34 @@
-import styled, {css} from 'styled-components'
-import {NavbarWrap} from '../../ui/navbar/navbar.style'
-import {NavItemWrap} from '../../ui/navbar/navitem/navitem.style'
-import {NavLinkWrap, AnchorTag, SmoothScroll} from '../../ui/navbar/navlink/navlink.style'
-import {SubmenuWrap} from '../../ui/navbar/submenu/submenu.style'
-import {MegamenuWrap} from '../../ui/navbar/megamenu/megamenu.style'
-import {device} from '../../../theme'
+import styled, { css } from "styled-components";
+import { NavbarWrap } from "../../ui/navbar/navbar.style";
+import { NavItemWrap } from "../../ui/navbar/navitem/navitem.style";
+import {
+  NavLinkWrap,
+  AnchorTag,
+  SmoothScroll
+} from "../../ui/navbar/navlink/navlink.style";
+import { SubmenuWrap } from "../../ui/navbar/submenu/submenu.style";
+import { MegamenuWrap } from "../../ui/navbar/megamenu/megamenu.style";
+import { device } from "../../../theme";
 
- 
-export const MainMenuWrap = styled.nav `
+export const MainMenuWrap = styled.nav`
     flex-grow: 1;
     display: flex;
     align-items: center;
-    ${props => props.alignment === 'right' && css`
+    ${props =>
+      props.alignment === "right" &&
+      css`
         justify-content: flex-end;
-    `}
-    ${props => props.alignment === 'left' && css`
+      `}
+    ${props =>
+      props.alignment === "left" &&
+      css`
         justify-content: flex-start;
-    `}
-    ${props => props.alignment === 'center' && css`
+      `}
+    ${props =>
+      props.alignment === "center" &&
+      css`
         justify-content: center;
-    `}
+      `}
     ${NavbarWrap}{
         ${NavItemWrap}{
             &:hover{
@@ -33,7 +42,8 @@ export const MainMenuWrap = styled.nav `
                 & > ${NavLinkWrap},
                 & > ${AnchorTag},
                 & > ${SmoothScroll}{
-                    color: ${props => props.hoverColor || props.theme.colors.themeColor};
+                    color: ${props =>
+                      props.hoverColor || props.theme.colors.themeColor};
                     span{
                         &:before{
                             width: 100%;
@@ -41,7 +51,8 @@ export const MainMenuWrap = styled.nav `
                         }
                     }
                     & > .icon{
-                        color: ${props => props.hoverColor || props.theme.colors.themeColor};
+                        color: ${props =>
+                          props.hoverColor || props.theme.colors.themeColor};
                     }
                 }
             }
@@ -81,10 +92,12 @@ export const MainMenuWrap = styled.nav `
                     height: 100%;
                 }
                 span{
-                    ${props => props.vSpace && css `
-                        padding-top: ${props => props.vSpace/2}px;
-                        padding-bottom: ${props => props.vSpace/2}px;
-                    `}
+                    ${props =>
+                      props.vSpace &&
+                      css`
+                        padding-top: ${props => props.vSpace / 2}px;
+                        padding-bottom: ${props => props.vSpace / 2}px;
+                      `}
                     &:before{
                         background-color: ${props => props.barColor};
                     }
@@ -94,15 +107,17 @@ export const MainMenuWrap = styled.nav `
                     color: ${props => props.color};
                 }
             }
-            ${props => props.alignment === 'right' && css `
+            ${props =>
+              props.alignment === "right" &&
+              css`
                 &:last-child,
-                :nth-last-child(2){
-                    & > ${SubmenuWrap}{
-                        left: auto;
-                        right: 0;
-                    }
+                :nth-last-child(2) {
+                  & > ${SubmenuWrap} {
+                    left: auto;
+                    right: 0;
+                  }
                 }
-            `}
+              `}
         }
         ${SubmenuWrap}{
             ${NavItemWrap}{
@@ -112,24 +127,31 @@ export const MainMenuWrap = styled.nav `
                     & > ${NavLinkWrap},
                     & > ${AnchorTag},
                     & > ${SmoothScroll}{
-                        ${props => props.submenu && css `
-                            ${props => props.submenu.hoverColor === 'primary' && css `
-                                color: ${props => props.theme.colors.themeColor};
-                            `}
-                            ${props => props.submenu.hoverColor !== 'primary' && css `
+                        ${props =>
+                          props.submenu &&
+                          css`
+                            ${props =>
+                              props.submenu.hoverColor === "primary" &&
+                              css`
+                                color: ${props =>
+                                  props.theme.colors.themeColor};
+                              `}
+                            ${props =>
+                              props.submenu.hoverColor !== "primary" &&
+                              css`
                                 color: ${props => props.submenu.hoverColor};
-                            `}
-                            
-                            & > .icon{
-                                position: absolute;
-                                right: 14px;
-                                top: 50%;
-                                font-size: 18px;
-                                transform: translateY(-50%);
-                                vertical-align: middle;
-                                color: #ababab;
+                              `}
+
+                            & > .icon {
+                              position: absolute;
+                              right: 14px;
+                              top: 50%;
+                              font-size: 18px;
+                              transform: translateY(-50%);
+                              vertical-align: middle;
+                              color: #ababab;
                             }
-                        `}
+                          `}
                         span{
                             &:before{
                                 right: auto;
@@ -184,77 +206,71 @@ export const MainMenuWrap = styled.nav `
         }
     }
 
-    ${props => props.layout === 3 && css `
-        ${NavbarWrap}{
-            & > ${NavItemWrap}{
-                margin-left: 24px;
-                margin-right: 24px;
-                & > ${NavLinkWrap},
-                & > ${AnchorTag},
-                & > ${SmoothScroll}{
-                    span{
-                        padding: 21px 0;
-                        &:before{
-                            display: none;
-                        }
-                    }
-                    .icon{
-                        font-size: 14px;
-                    }
+    ${props =>
+      props.layout === 3 &&
+      css`
+        ${NavbarWrap} {
+          & > ${NavItemWrap} {
+            margin-left: 24px;
+            margin-right: 24px;
+            & > ${NavLinkWrap}, & > ${AnchorTag}, & > ${SmoothScroll} {
+              span {
+                padding: 21px 0;
+                &:before {
+                  display: none;
                 }
-                ${SubmenuWrap}, 
-                ${MegamenuWrap}{
-                    top: 110%;
-                }
-            } 
-        }
-    `}
- 
-    ${props => props.whiteColor && css `
-        ${NavbarWrap}{
-            & > ${NavItemWrap}{
-                & > ${NavLinkWrap},
-                & > ${AnchorTag},
-                & > ${SmoothScroll}{
-                    color: #fff;
-                }
-                .icon{
-                    color: #fff;
-                }
-                &:hover{
-                    & > ${NavLinkWrap},
-                    & > ${AnchorTag},
-                    & > ${SmoothScroll},
-                    .icon{
-                        color: #fff !important;
-                    }
-                }
+              }
+              .icon {
+                font-size: 14px;
+              }
             }
-        }
-    `}
-    ${props => props.blackColor && css `
-        ${NavbarWrap}{
-            & > ${NavItemWrap}{
-                & > ${NavLinkWrap},
-                & > ${AnchorTag},
-                & > ${SmoothScroll}{
-                    color: #000;
-                    & > .icon{
-                        color: #000;
-                    }
-                }
-                &:hover{
-                    & > ${NavLinkWrap},
-                    & > ${AnchorTag},
-                    & > ${SmoothScroll}{
-                        color: #000;
-                        & > .icon{
-                            color: #000;
-                        }
-                    }
-                }
+            ${SubmenuWrap},
+            ${MegamenuWrap} {
+              top: 110%;
             }
+          }
         }
-    `}
+      `}
+
+    ${props =>
+      props.whiteColor &&
+      css`
+        ${NavbarWrap} {
+          & > ${NavItemWrap} {
+            & > ${NavLinkWrap}, & > ${AnchorTag}, & > ${SmoothScroll} {
+              color: #fff;
+            }
+            .icon {
+              color: #fff;
+            }
+            &:hover {
+              & > ${NavLinkWrap}, & > ${AnchorTag}, & > ${SmoothScroll}, .icon {
+                color: #fff !important;
+              }
+            }
+          }
+        }
+      `}
+    ${props =>
+      props.blackColor &&
+      css`
+        ${NavbarWrap} {
+          & > ${NavItemWrap} {
+            & > ${NavLinkWrap}, & > ${AnchorTag}, & > ${SmoothScroll} {
+              color: #000;
+              & > .icon {
+                color: #000;
+              }
+            }
+            &:hover {
+              & > ${NavLinkWrap}, & > ${AnchorTag}, & > ${SmoothScroll} {
+                color: #000;
+                & > .icon {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      `}
 `;
-  
