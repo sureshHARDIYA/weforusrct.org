@@ -44,7 +44,7 @@
     "react-visibility-sensor": "^5.1.1",
     "react-vivus": "0.0.2",
     "styled-components": "^5.0.1",
-    "swiper": "^5.2.1",
+    "swiper": "^6.5.1",
     "vivus": "^0.4.5"
   },
   "devDependencies": {
